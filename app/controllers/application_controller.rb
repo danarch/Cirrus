@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::API
+  # Devise controllers need functionality provided by this module in production mode
+  include ActionController::MimeResponds
+
   before_action :jsonify
 
 private
