@@ -10,6 +10,8 @@ private
     # Otherwise, look it up via api key sent in the AUTH_TOKEN header
     # Note: if this header isn't set, we should probably fall back on using the
     #   built in Devise auth handling
+    # Also note: your client will probably want to set the header AUTH_TOKEN (even though
+    #   it's read as HTTP_AUTH_TOKEN)
     token = request.headers["HTTP_AUTH_TOKEN"]
 
     # Look up the key (raises 404 if not found, which isn't the _best_ way to handle that)
