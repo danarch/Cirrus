@@ -1,9 +1,8 @@
-class ApplicationController < ActionController::API
+class ApplicationController < ActionController::Base
   # Devise controllers need functionality provided by this module in production mode
   include ActionController::MimeResponds
   protect_from_forgery with: :exception, unless: :api_request?
 
-  before_action :jsonify
 
 private
 
