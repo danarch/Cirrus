@@ -8,7 +8,7 @@ gem 'devise'
 gem 'jbuilder'
 
 group :development do
-  gem 'pry'
+  gem 'pry-rails'
   gem 'spring'
   gem 'sqlite3'
 end

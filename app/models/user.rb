@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :api_keys
   has_many :posts
+
 end
