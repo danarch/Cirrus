@@ -1,11 +1,1 @@
-$('.guess').click(function(){
-  $(this).css('display', 'none');
-  $('h2').css('display', 'block');
-  $('.toggle').toggleClass('hidden');
-});
-
-$('h2').click(function(){
-  $(this).css('display', 'none');
-  $('.guess').css('display', 'block');
-  $('.toggle').toggleClass('hidden');
-});
+console.log('The Iron Yard Rocks');
